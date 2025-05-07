@@ -1,187 +1,72 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Landing Page Project</title>
+</head>
+<body>
+    <header class="header">
+      <div class="container header-content">
+        
+        <img src="./images/Wify's logo.jpeg" alt="A hand holding a bag" style="display: inline-block; vertical-align: middle; max-width: 200px; height: auto;">
+        <nav class="nav">
+            <a href="#">header link one</a>
+            <a href="#">header link two</a>
+            <a href="#">header link three</a>
+        </nav>
+      </div>
+    </header>
 
+    <section class="hero">
+        <div class="container hero-grid">
+           <div class="hero-text">
+            <h1>This website is awesome</h1>
+            <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+            <button class="btn">Sign up</button>
+          </div>
+        <div class="hero-image">
+        <div class="image-placeholder">This is a placeholder for an image</div>
+        </div>
+    </section>
 
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-}
+    <section class="info">
+        <h2>Some random information.</h2>
+        <div class="info-cards">
+          <div class="card">
+            <img src="./images/Bags.jpeg" alt="Picture of designer bags" style="display: inline-block; vertical-align: middle; max-width: 150px; height: 100px;">
+            <p>Carry confidence — one stylish step at a time.</p>
+          </div>
+          <div class="card">
+            <img src="./images/Heels.jpeg" alt="Picture of heels" style="display: inline-block; vertical-align: middle; max-width: 150px; height: 100px;">
+            <p>Elevate every step — where style meets confidence.</p>
+          </div>
+          <div class="card">
+            <img src="./images/Sneaker.jpeg" alt="Picture of sneakers" style="display: inline-block; vertical-align: middle; max-width: 150px; height: 100px;">
+            <p>Move with purpose, styled for every stride.</p>
+          </div>
+        </div>
+      </section>
 
-.container {
-    width: 1100px;
-    margin: 0 auto;
-}
+    <section class="quote">
+        <div class="container">
+          <p><em>Don’t be into trends. Don’t make fashion own you, but you decide what you are, what you want to express by the way you dress and the way you live.</em></p>
+          <p class="author"><strong>-Gianni Versace</strong></p>
+        </div>
+    </section>
 
-.header {
-    background-color: #1f2937;
-    color: white;
-    padding: 20px 0px;
-}
+    <section class="cta">
+        <div class="cta-box">
+            <div class="cta-text">
+                <h3>Call to action! It's time!</h3>
+                <p>Sign up for our products by clicking that button right over there</p>
+            </div>
+            <button class="btn-outline">Sign up</button>
+        </div>
+    </section>
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav a {
-    color: white;
-    margin-left: 24px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.logo {
-    height: auto;
-    width: 100%;
-    max-width: 200px;
-}
-
-
-.hero {
-    background-color: #1f2937;
-    color: white;
-    padding: 100px 0;
-  }
-  
-  .hero-grid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .hero-text {
-    max-width: 45%;
-  }
-  
-  .hero-text h1 {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 12px;
-  }
-  
-  .hero-text p {
-    font-size: 18px;
-    color: #e5e7eb;
-    margin-bottom: 20px;
-  }
-  
-  .hero-image .image-placeholder {
-    background-color: #6b7280;
-    width: 500px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-  }
-  
-
-  .btn,
-  .btn-outline {
-    padding: 10px 25px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn {
-    background-color: #3882f6;
-    color: white;
-    border: none;
-  }
-  
-  .btn-outline {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-  }
-
-  .info {
-    padding: 70px 0;
-    text-align: center;
-  }
-  
-  .info h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 50px;
-  }
-  
-  .info-cards {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    width: 150px;
-  }
-  
-  .box {
-    width: 150px;
-    height: 150px;
-    border: 3px solid #3882f6;
-    border-radius: 15px;
-    margin-bottom: 10px;
-  }
-  
-  
-  .quote {
-    background-color: #e5e7eb;
-    padding: 100px 0;
-    font-size: 28px;
-    color: #1f2937;
-    text-align: left;
-    font-style: italic;
-  }
-  
-  .quote .container {
-    width: 800px;
-  }
-  
-  .quote .author {
-    margin-top: 20px;
-    font-style: normal;
-    text-align: right;
-  }
-  
-
-  .cta {
-    background: white;
-    padding: 70px 0;
-  }
-  
-  .cta-box {
-    background-color: #3882f6;
-    border-radius: 10px;
-    padding: 40px 70px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .cta-text h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .cta-text p {
-    font-size: 14px;
-  }
-
-  .footer {
-    background-color: #1f2937;
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-    font-size: 14px;
-  }
-  
+    <footer class="footer">
+        <p>Copyright © The Odin Project 2021</p>
+    </footer>
+</body>
+</html>
